@@ -31,5 +31,5 @@ https://cde.nlm.nih.gov/home
 
 ## Packages   
 - Labelled   
-- dataMeta   
+- dataMeta: the example code can be found [here](code/dataMeta_package.R)
 - codebook
