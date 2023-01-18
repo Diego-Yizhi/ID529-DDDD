@@ -23,6 +23,9 @@ Optional components:
 ## Recommendations
 Search for existing dictionaries and applicable common data elements for standardization. (ex. NIH CDE repository)   
 Share and update data dictionary along the research process.   
+
+Examples of common elements:   
+https://cde.nlm.nih.gov/home   
 <br>
 <br>
 
