@@ -1,0 +1,38 @@
+---
+title: "Codebook"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: 'hide'
+    self_contained: true
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+---
+
+The `codebook` package will automatically format metadata, summary statistics, missing tables, and a codebook based on your data. The following code generates a full codebook using your data. This includes summary statistics for each variable, a missing report, and the codebook. To create codebook, run `codebook::new_codebook_rmd()` in your console, which will load a new R markdown file with preset defaults. 
+
+An overview of the package can be found at: https://rubenarslan.github.io/codebook/index.html. A helpful tutorial on creating and updating the codebook can be found here:  https://rubenarslan.github.io/codebook/articles/codebook_tutorial.html. 
+
+```{r , include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+ggplot2::theme_set(ggplot2::theme_bw()) # preset theme from codebook
+
+# load dependencies
+library(codebook) # load the codebook package
+library(labelled) # load to update label names
+```
+
+```{r run_codebook, include = TRUE}
+library(ID529data) # load data 
+
+data(nhanes_id529, package = 'ID529data')
+
+#codebook(nhanes_id529) # generates codebook and summary statistics for each variable
+compact_codebook(nhanes_id529) # generates the codebook only
+```
+
