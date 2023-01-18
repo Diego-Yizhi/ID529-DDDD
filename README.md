@@ -1,6 +1,8 @@
 # ID529-DDDD
 The repository stores the R scripts and materials for the teamwork.   
 
+
+
 Data dictionary, also called as a code book is sort of a metadata which contains data about the dataset we are analyzing.   
 Being clear with definitions and description with the variables and values in our study is crucial to allow communication between collaborators and ensure reproducibility and robustness.   
 Our group aim to present an efficient way to create and share data dictionary by demonstrating the use of packages useful in epidemiologic research.   
