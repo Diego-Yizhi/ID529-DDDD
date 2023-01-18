@@ -32,4 +32,4 @@ https://cde.nlm.nih.gov/home
 ## Packages   
 - Labelled   
 - dataMeta: the example code can be found [here](code/dataMeta_package.R)
-- codebook
+- codebook: the example code can be found [here](code/codebook_1.Rmd)
