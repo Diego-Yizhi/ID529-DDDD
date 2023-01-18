@@ -21,7 +21,7 @@ Welcome to our brief tutorial on data documentation and managing data dictionari
 
 We have upload all materials on Github, you can access via:
 
-![QR](our_github_repo.png)
+![QR](https://raw.githubusercontent.com/Diego-Yizhi/images/main/20230118173354.png)
 
 Imagine you have inherited a dataset from a colleague, and you have been asked by your mentor to conduct an analysis. As you open the data and its files, you are relieved because your colleague has included substantial data documentation and data dictionary, which you know is a core component of conducting reproducible research and collaborating with other researchers. In particular, the data dictionary that your colleague has left you includes:
 
