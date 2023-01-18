@@ -199,3 +199,6 @@ dict <- build_dict(my.data = nhanes_id529, linker = linker,
 ```
 
 ## Best practices for data dictionaries
+
+* Data dictionaries are living documents, update as you go
+* 
