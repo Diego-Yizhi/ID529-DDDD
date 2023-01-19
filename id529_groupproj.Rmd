@@ -72,7 +72,7 @@ data(nhanes_id529, package = 'ID529data')
 
 ## Package 1: labelled
 
-The "labelled" package allows us to generate data dictionaries, and apply and retrieve variable labels, value labels, and special missing values (e.g., 88 from SPSS). Let's take a brief tour through its key functions. Note that these functions are used to generate data dictionaries using the "codebook" package as well (see the next section).
+The `labelled` package allows us to generate data dictionaries, and apply and retrieve variable labels, value labels, and special missing values (e.g., 88 from SPSS). Let's take a brief tour through its key functions. Note that these functions are used to generate data dictionaries using the `codebook` package as well (see the next section).
 
 ```{r}
 # Labeling variables using var_label(data)
@@ -91,15 +91,25 @@ look_for(nhanes_id529, details = TRUE)
 
 ## Package 2: codebook
 
-The `codebook` package will automatically format metadata, summary statistics, missing tables, and a codebook based on your data. It is used in conjunction with the 'labelled' package. The following code generates a full codebook using your data. This includes summary statistics for each variable, a missing report, and the codebook. The package allows you to modify labels and metadata, and can also work with metadata from Stata and SPSS. To create codebook, run `codebook::new_codebook_rmd()` in your console, which will load a new R markdown file with preset defaults.
+The `codebook` package will automatically format metadata, summary statistics, missing tables, and a codebook based on your data. It is used in conjunction with the `labelled` package. The following code generates a full codebook using your data. This includes summary statistics for each variable, a missing report, and the codebook. The package allows you to modify labels and metadata, and can also import metadata from Stata and SPSS.
 
-An overview of the package can be found at: <https://rubenarslan.github.io/codebook/index.html>. A helpful tutorial on creating and updating the codebook can be found here: <https://rubenarslan.github.io/codebook/articles/codebook_tutorial.html>.
+An overview of the package can be found at: <https://rubenarslan.github.io/codebook/index.html>. A helpful tutorial on creating and updating your codebook can be found here: <https://rubenarslan.github.io/codebook/articles/codebook_tutorial.html>.
 
-We can generate a codebook summary alongside summary statistics for each variable (output suppressed)
+To create a codebook, run `codebook::new_codebook_rmd()` in your console. This will launch a new R markdown file with preset defaults.
+
+Using the R markdown file, we can generate a codebook summary alongside summary statistics and a missingness report for each variable (output suppressed). We can also modify variable and value labels, and the metadata for the dataset.
 
 ```{r codebook, message = FALSE, results = 'hide'}
 # Generate codebook and summary statistics for each variable
 codebook (nhanes_id529)
+
+# Update variable (var_label) and value (val_label) using the labelled package
+var_label(nhanes_id529$sex_gender) <- "Sex assigned at birth" 
+
+# Modify dataset metadata 
+metadata(nhanes_id529)$description <- "This issurvey data from the US National Center for Health Statistics (NCHS) modified for the course ID529." 
+
+metadata(nhanes_id529)$creator <- "Hodu Testa"
 ```
 
 But do let us look at what the codebook summary looks like.
@@ -198,7 +208,12 @@ dict <- build_dict(my.data = nhanes_id529, linker = linker,
 # write.csv(dict, file = here::here("outputs","data_dictionary.csv"))
 ```
 
-## Best practices for data dictionaries
+## Best practices for data dictionaries and documentation
 
-* Data dictionaries are living documents, update as you go
-* 
+-   Data dictionaries are living documents, update as you go
+-   Depending on the size of the project, a flow chart can help document how data 
+    is flowing into the analysis, who is sharing it, and how often
+-   Document the data structure and relationship between files 
+-   Note any changes to data over time, especially if reporting or coding of certain 
+    variables has changed
+
