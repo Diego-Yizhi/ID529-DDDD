@@ -219,3 +219,4 @@ dict <- build_dict(my.data = nhanes_id529, linker = linker,
 -   Depending on the size of the project, a flow chart can help document how data is flowing into the analysis, who is sharing it, and how often
 -   Document the data structure and relationship between files
 -   Note any changes to data over time, especially if reporting or coding of certain variables has changed
+-   Be clear with the words and refer to existing dictionaries or common data elements in the topic area if needed.
