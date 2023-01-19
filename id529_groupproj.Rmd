@@ -211,6 +211,7 @@ dict <- build_dict(my.data = nhanes_id529, linker = linker,
 ## Best practices for data dictionaries and documentation
 
 -   Data dictionaries are living documents, update as you go
+-   More detail is better than not enough
 -   Depending on the size of the project, a flow chart can help document how data 
     is flowing into the analysis, who is sharing it, and how often
 -   Document the data structure and relationship between files 
