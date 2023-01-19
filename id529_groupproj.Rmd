@@ -23,6 +23,10 @@ We have upload all materials on Github, you can access via:
 
 ![QR](https://raw.githubusercontent.com/Diego-Yizhi/images/main/20230118173354.png)
 
+> Note: [[**FOR MAC USER**]{.underline}]
+>
+> Before you run the R chunks in the rmarkdown file, you'd better check whether you have installed [XQuartz](https://www.xquartz.org/) in your computer. Many R packages may rely on this.
+
 Imagine you have inherited a dataset from a colleague, and you have been asked by your mentor to conduct an analysis. As you open the data and its files, you are relieved because your colleague has included substantial data documentation and data dictionary, which you know is a core component of conducting reproducible research and collaborating with other researchers. In particular, the data dictionary that your colleague has left you includes:
 
 **Information about the data that you are using:**
@@ -212,9 +216,6 @@ dict <- build_dict(my.data = nhanes_id529, linker = linker,
 
 -   Data dictionaries are living documents, update as you go
 -   More detail is better than not enough
--   Depending on the size of the project, a flow chart can help document how data 
-    is flowing into the analysis, who is sharing it, and how often
--   Document the data structure and relationship between files 
--   Note any changes to data over time, especially if reporting or coding of certain 
-    variables has changed
-
+-   Depending on the size of the project, a flow chart can help document how data is flowing into the analysis, who is sharing it, and how often
+-   Document the data structure and relationship between files
+-   Note any changes to data over time, especially if reporting or coding of certain variables has changed

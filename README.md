@@ -4,6 +4,10 @@ Contributors: S. Baum, R. Hickman, D. Liang, S. Park, H. Kelahan, and L. Ung
 
 You can check the instruction [here](id529_groupproj.html) and check the [rmarkdown](id529_groupproj.Rmd).
 
+> Note: [[**FOR MAC USER**]{.underline}]
+>
+> Before you run the R chunks in the rmarkdown file, you'd better check whether you have installed [XQuartz](https://www.xquartz.org/) in your computer. Many R packages may rely on this.
+
 <br>
 
 Data dictionary, also called as a code book is sort of a metadata which contains data about the dataset we are analyzing.\
