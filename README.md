@@ -2,7 +2,7 @@
 
 Contributors: S. Baum, R. Hickman, Y. Liang, S. Park, H. Kelahan, and L. Ung
 
-You can download the rendered instruction [here](https://github.com/Diego-Yizhi/ID529-DDDD/raw/main/id529_groupproj.html) (don't forget to right click, then save it as a *html* file in your computer, so you can open it) and check the [rmarkdown](id529_groupproj.Rmd). We also made [slides/and a video](https://1drv.ms/p/s!AmfEKFRlQHtijnzIOuJ5ydx5uX0-).
+You can download the rendered instructions [here](https://github.com/Diego-Yizhi/ID529-DDDD/raw/main/id529_groupproj.html) (don't forget to right click, then save it as a *html* file in your computer, so you can open it) and check the [rmarkdown](id529_groupproj.Rmd). We also made [slides/and a video](https://1drv.ms/p/s!AmfEKFRlQHtijnzIOuJ5ydx5uX0-).
 
 > Note: [[**FOR MAC USER**]]
 >
