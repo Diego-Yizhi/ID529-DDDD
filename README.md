@@ -1,6 +1,6 @@
-# ID529-DDDD
+# ID529-DDDD (Data Documentation and Data Dictionaries)
 
-Contributors: S. Baum, R. Hickman, D. Liang, S. Park, H. Kelahan, and L. Ung
+Contributors: S. Baum, R. Hickman, Y. Liang, S. Park, H. Kelahan, and L. Ung
 
 You can download the rendered instruction [here](https://github.com/Diego-Yizhi/ID529-DDDD/raw/main/id529_groupproj.html) (don't forget to secondary click, then save it as a *html* file in your computer, so you can open it) and check the [rmarkdown](id529_groupproj.Rmd).
 
