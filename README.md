@@ -2,7 +2,7 @@
 
 Contributors: S. Baum, R. Hickman, D. Liang, S. Park, H. Kelahan, and L. Ung
 
-You can check the instruction [here](https://hu-my.sharepoint.com/:u:/g/personal/yizhi_liang_hsph_harvard_edu/ETH58biI-LZPvN8s71WKVjUBxYFBx924dT9NtOwTuJkMAw?e=fd62YZ) and check the [rmarkdown](id529_groupproj.Rmd).
+You can download the rendered instruction [here](https://github.com/Diego-Yizhi/ID529-DDDD/raw/main/id529_groupproj.html) (don't forget to save it as a html file in your computer, so you can open it) and check the [rmarkdown](id529_groupproj.Rmd).
 
 > Note: [[**FOR MAC USER**]]
 >
@@ -16,22 +16,16 @@ Our group aim to present an efficient way to create and share data dictionary by
 
 ## Components of a data dictionary
 
-Basic components:
-- Variable **names**/**types**/**descriptions**
-- Allowed values (**options** for discrete, **min/max** for continuous data)
+Basic components: - Variable **names**/**types**/**descriptions** - Allowed values (**options** for discrete, **min/max** for continuous data)
 
-Optional components:
-- number of missing values
-- Units
-- Question from the questionnaire, if applicable
+Optional components: - number of missing values - Units - Question from the questionnaire, if applicable
 
 ## Recommendations
 
 Search for existing dictionaries and applicable common data elements for standardization. (ex. NIH CDE repository)\
 Share and update data dictionary along the research process.
 
-Examples of common elements:
-<https://cde.nlm.nih.gov/home>\
+Examples of common elements: <https://cde.nlm.nih.gov/home>\
 <br> <br>
 
 ## Packages
